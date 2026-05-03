@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net9.0-windows10.0.26100.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UseWPF>true</UseWPF>
+		<PlatformTarget>x64</PlatformTarget>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="HYP_50M_SR_W.tif" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="HelixToolkit" Version="3.1.2" />
+		<PackageReference Include="HelixToolkit.Wpf" Version="2.26.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Resource Include="HYP_50M_SR_W.tif" />
+	</ItemGroup>
+
+</Project>
